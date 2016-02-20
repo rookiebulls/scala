@@ -1,8 +1,3 @@
-Flask By Example
-================
-
-Code for my PyCon 2014 tutorial "Flask By Example".
-
 Pre-requisites
 --------------
 
@@ -26,11 +21,6 @@ The tutorial does not have a hands-on portion. For that reason it is not require
 However, you will want to work with this application once you learn all about it in class, so I recommend that you try to install it ahead of time and have a chance to talk to me if you run into problems.
 
 Please make sure your computer meets all the requirements listed above before you begin. Below are step-by-step installation instructions:
-
-**Step 1**: Clone the git repository
-
-    $ git clone https://github.com/miguelgrinberg/flask-pycon2014.git
-    $ cd flask-pycon2014
 
 **Step 2**: Create a virtual environment.
 
