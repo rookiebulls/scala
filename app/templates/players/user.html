@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="talk">
+    {% if current_user.is_admin %}
+    <a class="btn btn-default" href="{{url_for('players.new_user')}}">New User</a>
+    {% endif %}   
+          <table class="table table-striped">
+            <thead id="tblHead">
+              <tr>
+                <th>UserName</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% if current_user.is_admin %}
+            {% for user in users %}
+            {% include "players/_user.html" %}
+            {% endfor %}
+            {% else %}
+            {% include "players/_user.html" %}
+            {% endif %}
+            </tbody>
+          </table>
+</div>
+{% endblock %}

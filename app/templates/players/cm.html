@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="talk">
+    {% if current_user.is_admin %}
+    <a class="btn btn-default" href="{{url_for('players.new_cm')}}">New CM</a>
+    {% endif %}
+          <table class="table table-striped">
+            <thead id="tblHead">
+              <tr>
+                <th>CM Address</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for cm in cms %}
+            {% include "players/_cm.html" %}
+            {% endfor %}
+            </tbody>
+          </table>
+    
+</div>
+{% endblock %}

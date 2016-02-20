@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        CM
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        {% for cm in cms %}
+        <li><a href="{{url_for('players.sorted_players', id=cm.id)}}">{{cm.ip_address}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+{% include "players/_players.html" %}
+{% endblock %}

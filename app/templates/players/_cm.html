@@ -1,0 +1,9 @@
+<tr>
+	<td>{{cm.ip_address}}</td>
+	<td>
+	{% if current_user.is_admin %}
+	<a class="btn btn-default btn-xs pull-right" href="{{url_for('players.delete_cm', id=cm.id)}}"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+	<a class="btn btn-default btn-xs pull-right" href="{{url_for('players.edit_cm', id=cm.id)}}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+	{% endif %}
+	</td>
+</tr>

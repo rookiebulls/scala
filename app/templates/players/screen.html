@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="talk">
+          <table class="table table-striped" id="tblGrid">
+            <thead id="tblHead">
+              <tr>
+                <th>Screen Type</th>
+                <th>Power Status</th>
+                <th>Resolution</th>
+                <th>Brightness</th>
+                <th>Contrast</th>
+                <th>Powered On Hours</th>
+                <th>Backlight On Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{player.screen_type}}</td>
+                <td>{{player.power_status}}</td>
+                <td>{{player.resolution}}</td>
+                <td>{{player.brightness}}</td>
+                <td>{{player.contrast}}</td>
+                <td>{{player.powered_on_hours}}</td>
+                <td>{{player.backlight_on_hours}}</td>
+              </tr>
+            </tbody>
+          </table>
+</div>
+{% endblock %}
+

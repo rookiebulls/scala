@@ -1,0 +1,11 @@
+<tr>
+    <td>{{ player.name }}</td>
+    <td><span>{{player.last_player_heartbeat }}</span></td>
+    <td><span {% if player.last_player_issue=='HEARTBEAT_OVERDUE'%} class="label label-warning" {% else %} class="label label-danger" {% endif %}>{{player.last_player_issue }}</span></td>
+    <td><a href="{{url_for('players.screen', id=player.id)}}">{{ player.last_screen_issue }}</a></td>
+</tr>
+
+
+
+
+
