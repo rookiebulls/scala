@@ -39,7 +39,7 @@ class ContentmanagerForm(Form):
     submit = SubmitField('New')
 
     def validate_ip_address(self, field):
-        if ContentManager.query.filter_by(ip_address=field.data).first:
+        if ContentManager.query.filter_by(ip_address=field.data).first():
             raise ValidationError('Content manager has already existed.')
 
 

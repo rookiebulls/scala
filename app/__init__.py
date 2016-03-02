@@ -3,7 +3,8 @@ from flask.ext.bootstrap import Bootstrap
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.login import LoginManager
 from flask.ext.moment import Moment
-from config import config
+from config import config, Config
+# from celery import Celery
 
 
 bootstrap = Bootstrap()
@@ -12,6 +13,8 @@ moment = Moment()
 
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
+
+# celery = Celery('__name__', broker=Config.CELERY_BROKER_URL)
 
 
 def create_app(config_name):
@@ -22,6 +25,8 @@ def create_app(config_name):
     db.init_app(app)
     moment.init_app(app)
     login_manager.init_app(app)
+
+    # celery.conf.update(app.config)
 
     from .players import players as players_blueprint
     app.register_blueprint(players_blueprint)

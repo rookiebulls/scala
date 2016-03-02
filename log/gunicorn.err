@@ -1,0 +1,1133 @@
+[2016-02-21 10:59:21 +0000] [25249] [INFO] Starting gunicorn 19.4.5
+[2016-02-21 10:59:21 +0000] [25249] [INFO] Listening at: http://0.0.0.0:8000 (25249)
+[2016-02-21 10:59:21 +0000] [25249] [INFO] Using worker: sync
+[2016-02-21 10:59:21 +0000] [25254] [INFO] Booting worker with pid: 25254
+[2016-02-21 10:59:22 +0000] [25255] [INFO] Booting worker with pid: 25255
+[2016-02-21 10:59:22 +0000] [25256] [INFO] Booting worker with pid: 25256
+[2016-02-21 10:59:23 +0000] [25257] [INFO] Booting worker with pid: 25257
+[2016-02-21 11:00:11 +0000] [25249] [CRITICAL] WORKER TIMEOUT (pid:25256)
+[2016-02-21 11:00:11 +0000] [25256] [INFO] Worker exiting (pid: 25256)
+[2016-02-21 11:00:11 +0000] [25249] [CRITICAL] WORKER TIMEOUT (pid:25254)
+[2016-02-21 11:00:11 +0000] [25254] [INFO] Worker exiting (pid: 25254)
+[2016-02-21 11:00:11 +0000] [25278] [INFO] Booting worker with pid: 25278
+[2016-02-21 11:00:11 +0000] [25279] [INFO] Booting worker with pid: 25279
+[2016-02-21 11:00:44 +0000] [25249] [INFO] Handling signal: term
+[2016-02-21 11:00:44 +0000] [25279] [INFO] Worker exiting (pid: 25279)
+[2016-02-21 11:00:44 +0000] [25278] [INFO] Worker exiting (pid: 25278)
+[2016-02-21 11:00:44 +0000] [25257] [INFO] Worker exiting (pid: 25257)
+[2016-02-21 11:00:44 +0000] [25255] [INFO] Worker exiting (pid: 25255)
+[2016-02-21 22:31:56 +0000] [5020] [INFO] Starting gunicorn 19.4.5
+[2016-02-21 22:31:56 +0000] [5020] [INFO] Listening at: http://0.0.0.0:8000 (5020)
+[2016-02-21 22:31:56 +0000] [5020] [INFO] Using worker: sync
+[2016-02-21 22:31:56 +0000] [5025] [INFO] Booting worker with pid: 5025
+[2016-02-21 22:31:56 +0000] [5026] [INFO] Booting worker with pid: 5026
+[2016-02-21 22:31:56 +0000] [5027] [INFO] Booting worker with pid: 5027
+[2016-02-21 22:31:56 +0000] [5028] [INFO] Booting worker with pid: 5028
+[2016-02-27 09:27:04 +0000] [3218] [INFO] Starting gunicorn 19.4.5
+[2016-02-27 09:27:04 +0000] [3218] [INFO] Listening at: http://0.0.0.0:8000 (3218)
+[2016-02-27 09:27:04 +0000] [3218] [INFO] Using worker: sync
+[2016-02-27 09:27:04 +0000] [3223] [INFO] Booting worker with pid: 3223
+[2016-02-27 09:27:04 +0000] [3224] [INFO] Booting worker with pid: 3224
+[2016-02-27 09:27:04 +0000] [3225] [INFO] Booting worker with pid: 3225
+[2016-02-27 09:27:04 +0000] [3226] [INFO] Booting worker with pid: 3226
+[2016-02-27 09:46:32 +0000] [3218] [CRITICAL] WORKER TIMEOUT (pid:3225)
+[2016-02-27 09:46:33 +0000] [3218] [CRITICAL] WORKER TIMEOUT (pid:3226)
+[2016-02-27 09:46:33 +0000] [3225] [INFO] Worker exiting (pid: 3225)
+[2016-02-27 09:46:35 +0000] [3530] [INFO] Booting worker with pid: 3530
+[2016-02-27 09:46:35 +0000] [3531] [INFO] Booting worker with pid: 3531
+[2016-02-27 10:23:11 +0000] [3218] [CRITICAL] WORKER TIMEOUT (pid:3223)
+[2016-02-27 10:23:12 +0000] [3223] [INFO] Worker exiting (pid: 3223)
+[2016-02-27 10:23:13 +0000] [3752] [INFO] Booting worker with pid: 3752
+[2016-02-27 10:37:06 +0000] [3224] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '17{time.some.seconds}'
+[2016-02-27 10:37:12 +0000] [3224] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '22{time.some.seconds}'
+[2016-02-27 10:37:59 +0000] [3224] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '5{time.some.seconds}'
+[2016-02-27 10:38:21 +0000] [3531] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '29{time.some.seconds}'
+[2016-02-27 10:38:36 +0000] [3530] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '44{time.some.seconds}'
+[2016-02-27 10:40:07 +0000] [3218] [INFO] Handling signal: term
+[2016-02-27 10:40:08 +0000] [3752] [INFO] Worker exiting (pid: 3752)
+[2016-02-27 10:40:08 +0000] [3531] [INFO] Worker exiting (pid: 3531)
+[2016-02-27 10:40:08 +0000] [3530] [INFO] Worker exiting (pid: 3530)
+[2016-02-27 10:40:08 +0000] [3224] [INFO] Worker exiting (pid: 3224)
+[2016-02-27 10:40:16 +0000] [3855] [INFO] Starting gunicorn 19.4.5
+[2016-02-27 10:40:16 +0000] [3855] [INFO] Listening at: http://0.0.0.0:8000 (3855)
+[2016-02-27 10:40:16 +0000] [3855] [INFO] Using worker: sync
+[2016-02-27 10:40:16 +0000] [3860] [INFO] Booting worker with pid: 3860
+[2016-02-27 10:40:16 +0000] [3861] [INFO] Booting worker with pid: 3861
+[2016-02-27 10:40:16 +0000] [3862] [INFO] Booting worker with pid: 3862
+[2016-02-27 10:40:16 +0000] [3863] [INFO] Booting worker with pid: 3863
+[2016-02-27 10:40:18 +0000] [3861] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '13{time.some.seconds}'
+[2016-02-27 10:41:42 +0000] [3855] [INFO] Handling signal: term
+[2016-02-27 10:41:42 +0000] [3860] [INFO] Worker exiting (pid: 3860)
+[2016-02-27 10:41:42 +0000] [3861] [INFO] Worker exiting (pid: 3861)
+[2016-02-27 10:41:42 +0000] [3862] [INFO] Worker exiting (pid: 3862)
+[2016-02-27 10:41:42 +0000] [3863] [INFO] Worker exiting (pid: 3863)
+[2016-02-27 10:41:46 +0000] [3883] [INFO] Starting gunicorn 19.4.5
+[2016-02-27 10:41:46 +0000] [3883] [INFO] Listening at: http://0.0.0.0:8000 (3883)
+[2016-02-27 10:41:46 +0000] [3883] [INFO] Using worker: sync
+[2016-02-27 10:41:46 +0000] [3888] [INFO] Booting worker with pid: 3888
+[2016-02-27 10:41:46 +0000] [3889] [INFO] Booting worker with pid: 3889
+[2016-02-27 10:41:46 +0000] [3890] [INFO] Booting worker with pid: 3890
+[2016-02-27 10:41:46 +0000] [3893] [INFO] Booting worker with pid: 3893
+[2016-02-27 10:41:48 +0000] [3893] [ERROR] Error handling request /home
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '13{time.some.seconds}'
+[2016-02-27 10:42:04 +0000] [3893] [ERROR] Error handling request /home
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '13{time.some.seconds}'
+[2016-02-27 10:42:07 +0000] [3893] [ERROR] Error handling request /home
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '13{time.some.seconds}'
+[2016-02-27 10:42:08 +0000] [3893] [ERROR] Error handling request /home
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '13{time.some.seconds}'
+[2016-02-27 10:42:09 +0000] [3893] [ERROR] Error handling request /home
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '13{time.some.seconds}'
+[2016-02-27 10:42:09 +0000] [3893] [ERROR] Error handling request /home
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 11, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 72, in instances
+    rows = [process[0](row, None) for row in fetch]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 451, in _instance
+    populate_state(state, dict_, row, isnew, only_load_props)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/loading.py", line 305, in populate_state
+    populator(state, dict_, row)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/strategies.py", line 154, in fetch_col
+    dict_[key] = row[col]
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/result.py", line 90, in __getitem__
+    return processor(self._row[index])
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/processors.py", line 39, in process
+    "'%s'" % (type_.__name__, value))
+ValueError: Couldn't parse datetime string: '13{time.some.seconds}'
+[2016-02-27 10:42:31 +0000] [3883] [INFO] Handling signal: term
+[2016-02-27 10:42:31 +0000] [3888] [INFO] Worker exiting (pid: 3888)
+[2016-02-27 10:42:31 +0000] [3889] [INFO] Worker exiting (pid: 3889)
+[2016-02-27 10:42:31 +0000] [3890] [INFO] Worker exiting (pid: 3890)
+[2016-02-27 10:42:31 +0000] [3893] [INFO] Worker exiting (pid: 3893)
+[2016-02-28 13:35:19 +0000] [4485] [INFO] Starting gunicorn 19.4.5
+[2016-02-28 13:35:19 +0000] [4485] [INFO] Listening at: http://0.0.0.0:8000 (4485)
+[2016-02-28 13:35:19 +0000] [4485] [INFO] Using worker: sync
+[2016-02-28 13:35:19 +0000] [4490] [INFO] Booting worker with pid: 4490
+[2016-02-28 13:35:19 +0000] [4491] [INFO] Booting worker with pid: 4491
+[2016-02-28 13:35:19 +0000] [4492] [INFO] Booting worker with pid: 4492
+[2016-02-28 13:35:19 +0000] [4493] [INFO] Booting worker with pid: 4493
+[2016-02-28 13:49:53 +0000] [4485] [CRITICAL] WORKER TIMEOUT (pid:4491)
+[2016-02-28 13:49:53 +0000] [4491] [INFO] Worker exiting (pid: 4491)
+[2016-02-28 13:49:53 +0000] [4485] [CRITICAL] WORKER TIMEOUT (pid:4492)
+[2016-02-28 13:49:53 +0000] [4492] [INFO] Worker exiting (pid: 4492)
+[2016-02-28 13:49:53 +0000] [4550] [INFO] Booting worker with pid: 4550
+[2016-02-28 13:49:53 +0000] [4551] [INFO] Booting worker with pid: 4551
+[2016-02-28 13:51:13 +0000] [4485] [CRITICAL] WORKER TIMEOUT (pid:4490)
+[2016-02-28 13:51:13 +0000] [4490] [INFO] Worker exiting (pid: 4490)
+[2016-02-28 13:51:13 +0000] [4559] [INFO] Booting worker with pid: 4559
+[2016-02-28 13:54:41 +0000] [4485] [CRITICAL] WORKER TIMEOUT (pid:4493)
+[2016-02-28 13:54:43 +0000] [4569] [INFO] Booting worker with pid: 4569
+[2016-02-28 13:55:13 +0000] [4485] [CRITICAL] WORKER TIMEOUT (pid:4569)
+[2016-02-28 13:55:13 +0000] [4569] [INFO] Worker exiting (pid: 4569)
+[2016-02-28 13:55:14 +0000] [4574] [INFO] Booting worker with pid: 4574
+[2016-02-28 19:42:23 +0000] [4485] [CRITICAL] WORKER TIMEOUT (pid:4551)
+[2016-02-28 19:42:29 +0000] [5238] [INFO] Booting worker with pid: 5238
+[2016-02-28 19:43:50 +0000] [5238] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 16, in index
+    result = get_health(cm)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/celery/app/task.py", line 420, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/rookiebulls/scala/tasks.py", line 11, in get_health
+    player_health = PullHealth(*cm)
+TypeError: type object argument after * must be a sequence, not ContentManager
+[2016-02-28 19:44:29 +0000] [4485] [INFO] Handling signal: term
+[2016-02-28 19:44:29 +0000] [5238] [INFO] Worker exiting (pid: 5238)
+[2016-02-28 22:22:29 +0000] [5747] [INFO] Starting gunicorn 19.4.5
+[2016-02-28 22:22:29 +0000] [5747] [INFO] Listening at: http://0.0.0.0:8000 (5747)
+[2016-02-28 22:22:29 +0000] [5747] [INFO] Using worker: sync
+[2016-02-28 22:22:29 +0000] [5752] [INFO] Booting worker with pid: 5752
+[2016-02-28 22:22:29 +0000] [5753] [INFO] Booting worker with pid: 5753
+[2016-02-28 22:22:29 +0000] [5754] [INFO] Booting worker with pid: 5754
+[2016-02-28 22:22:29 +0000] [5759] [INFO] Booting worker with pid: 5759
+[2016-02-28 22:22:48 +0000] [5759] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 22, in index
+    return render_template('players/index.html', players=players, cms=cms)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/app/templates/players/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/rookiebulls/scala/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/rookiebulls/scala/app/templates/base.html", line 57, in block "content"
+    {% block page_content %}{% endblock %}
+  File "/home/rookiebulls/scala/app/templates/players/index.html", line 15, in block "page_content"
+    {% include "players/_players.html" %}
+  File "/home/rookiebulls/scala/app/templates/players/_players.html", line 12, in top-level template code
+    {% include "players/_player_header.html" %}
+  File "/home/rookiebulls/scala/app/templates/players/_player_header.html", line 5, in top-level template code
+    <td><a href="{{url_for('players.screen', id=player.id)}}">{{ player.last_screen_issue }}</a></td>
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1756, in build
+    rv = self._partial_build(endpoint, values, method, append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1671, in _partial_build
+    append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1679, in _partial_build
+    rv = rule.build(values, append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 798, in build
+    add(self._converters[data].to_url(values[data]))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1016, in to_url
+    value = self.num_convert(value)
+UndefinedError: 'None' has no attribute 'id'
+[2016-02-28 22:22:55 +0000] [5754] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 22, in index
+    return render_template('players/index.html', players=players, cms=cms)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/app/templates/players/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/rookiebulls/scala/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/rookiebulls/scala/app/templates/base.html", line 57, in block "content"
+    {% block page_content %}{% endblock %}
+  File "/home/rookiebulls/scala/app/templates/players/index.html", line 15, in block "page_content"
+    {% include "players/_players.html" %}
+  File "/home/rookiebulls/scala/app/templates/players/_players.html", line 12, in top-level template code
+    {% include "players/_player_header.html" %}
+  File "/home/rookiebulls/scala/app/templates/players/_player_header.html", line 5, in top-level template code
+    <td><a href="{{url_for('players.screen', id=player.id)}}">{{ player.last_screen_issue }}</a></td>
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1756, in build
+    rv = self._partial_build(endpoint, values, method, append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1671, in _partial_build
+    append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1679, in _partial_build
+    rv = rule.build(values, append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 798, in build
+    add(self._converters[data].to_url(values[data]))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1016, in to_url
+    value = self.num_convert(value)
+UndefinedError: 'None' has no attribute 'id'
+[2016-02-28 22:23:15 +0000] [5747] [CRITICAL] WORKER TIMEOUT (pid:5753)
+[2016-02-28 22:23:15 +0000] [5753] [INFO] Worker exiting (pid: 5753)
+[2016-02-28 22:23:15 +0000] [5779] [INFO] Booting worker with pid: 5779
+[2016-02-28 22:26:55 +0000] [5779] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 22, in index
+    return render_template('players/index.html', players=players, cms=cms)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/app/templates/players/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/rookiebulls/scala/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/rookiebulls/scala/app/templates/base.html", line 57, in block "content"
+    {% block page_content %}{% endblock %}
+  File "/home/rookiebulls/scala/app/templates/players/index.html", line 15, in block "page_content"
+    {% include "players/_players.html" %}
+  File "/home/rookiebulls/scala/app/templates/players/_players.html", line 12, in top-level template code
+    {% include "players/_player_header.html" %}
+  File "/home/rookiebulls/scala/app/templates/players/_player_header.html", line 5, in top-level template code
+    <td><a href="{{url_for('players.screen', id=player.id)}}">{{ player.last_screen_issue }}</a></td>
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1756, in build
+    rv = self._partial_build(endpoint, values, method, append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1671, in _partial_build
+    append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1679, in _partial_build
+    rv = rule.build(values, append_unknown)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 798, in build
+    add(self._converters[data].to_url(values[data]))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/werkzeug/routing.py", line 1016, in to_url
+    value = self.num_convert(value)
+UndefinedError: 'None' has no attribute 'id'
+[2016-02-28 22:27:18 +0000] [5747] [CRITICAL] WORKER TIMEOUT (pid:5752)
+[2016-02-28 22:27:18 +0000] [5752] [INFO] Worker exiting (pid: 5752)
+[2016-02-28 22:27:18 +0000] [5799] [INFO] Booting worker with pid: 5799
+[2016-02-28 22:30:03 +0000] [5747] [INFO] Handling signal: term
+[2016-02-28 22:30:03 +0000] [5799] [INFO] Worker exiting (pid: 5799)
+[2016-02-28 22:30:03 +0000] [5779] [INFO] Worker exiting (pid: 5779)
+[2016-02-28 22:30:03 +0000] [5754] [INFO] Worker exiting (pid: 5754)
+[2016-02-28 22:30:03 +0000] [5759] [INFO] Worker exiting (pid: 5759)
+[2016-02-28 22:33:07 +0000] [5850] [INFO] Starting gunicorn 19.4.5
+[2016-02-28 22:33:07 +0000] [5850] [INFO] Listening at: http://0.0.0.0:8000 (5850)
+[2016-02-28 22:33:07 +0000] [5850] [INFO] Using worker: sync
+[2016-02-28 22:33:07 +0000] [5855] [INFO] Booting worker with pid: 5855
+[2016-02-28 22:33:07 +0000] [5858] [INFO] Booting worker with pid: 5858
+[2016-02-28 22:33:07 +0000] [5859] [INFO] Booting worker with pid: 5859
+[2016-02-28 22:33:07 +0000] [5860] [INFO] Booting worker with pid: 5860
+[2016-02-28 22:34:13 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5858)
+[2016-02-28 22:34:13 +0000] [5858] [INFO] Worker exiting (pid: 5858)
+[2016-02-28 22:34:13 +0000] [5936] [INFO] Booting worker with pid: 5936
+[2016-02-28 22:39:15 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5859)
+[2016-02-28 22:39:15 +0000] [5859] [INFO] Worker exiting (pid: 5859)
+[2016-02-28 22:39:15 +0000] [5964] [INFO] Booting worker with pid: 5964
+[2016-02-28 22:46:55 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5855)
+[2016-02-28 22:46:55 +0000] [5855] [INFO] Worker exiting (pid: 5855)
+[2016-02-28 22:46:55 +0000] [5974] [INFO] Booting worker with pid: 5974
+[2016-02-28 22:50:47 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5860)
+[2016-02-28 22:50:47 +0000] [5860] [INFO] Worker exiting (pid: 5860)
+[2016-02-28 22:50:47 +0000] [5985] [INFO] Booting worker with pid: 5985
+[2016-02-29 22:19:25 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5985)
+[2016-02-29 22:19:25 +0000] [5985] [INFO] Worker exiting (pid: 5985)
+[2016-02-29 22:19:25 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5964)
+[2016-02-29 22:19:25 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5936)
+[2016-02-29 22:19:25 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:5974)
+[2016-02-29 22:19:25 +0000] [5974] [INFO] Worker exiting (pid: 5974)
+[2016-02-29 22:19:25 +0000] [5964] [INFO] Worker exiting (pid: 5964)
+[2016-02-29 22:19:27 +0000] [6060] [INFO] Booting worker with pid: 6060
+[2016-02-29 22:19:27 +0000] [6059] [INFO] Booting worker with pid: 6059
+[2016-02-29 22:19:27 +0000] [6063] [INFO] Booting worker with pid: 6063
+[2016-02-29 22:19:27 +0000] [6062] [INFO] Booting worker with pid: 6062
+[2016-02-29 22:20:41 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6059)
+[2016-02-29 22:20:41 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6060)
+[2016-02-29 22:20:41 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6062)
+[2016-02-29 22:20:41 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6063)
+[2016-02-29 22:20:41 +0000] [6060] [INFO] Worker exiting (pid: 6060)
+[2016-02-29 22:20:41 +0000] [6059] [INFO] Worker exiting (pid: 6059)
+[2016-02-29 22:20:41 +0000] [6063] [INFO] Worker exiting (pid: 6063)
+[2016-02-29 22:20:41 +0000] [6062] [INFO] Worker exiting (pid: 6062)
+[2016-02-29 22:20:42 +0000] [6132] [INFO] Booting worker with pid: 6132
+[2016-02-29 22:20:42 +0000] [6133] [INFO] Booting worker with pid: 6133
+[2016-02-29 22:20:42 +0000] [6134] [INFO] Booting worker with pid: 6134
+[2016-02-29 22:20:42 +0000] [6135] [INFO] Booting worker with pid: 6135
+[2016-02-29 22:34:43 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6132)
+[2016-02-29 22:34:43 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6133)
+[2016-02-29 22:34:43 +0000] [6133] [INFO] Worker exiting (pid: 6133)
+[2016-02-29 22:34:43 +0000] [6132] [INFO] Worker exiting (pid: 6132)
+[2016-02-29 22:34:43 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6134)
+[2016-02-29 22:34:43 +0000] [6134] [INFO] Worker exiting (pid: 6134)
+[2016-02-29 22:34:43 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6135)
+[2016-02-29 22:34:43 +0000] [6135] [INFO] Worker exiting (pid: 6135)
+[2016-02-29 22:34:44 +0000] [6198] [INFO] Booting worker with pid: 6198
+[2016-02-29 22:34:44 +0000] [6197] [INFO] Booting worker with pid: 6197
+[2016-02-29 22:34:44 +0000] [6196] [INFO] Booting worker with pid: 6196
+[2016-02-29 22:34:44 +0000] [6199] [INFO] Booting worker with pid: 6199
+[2016-02-29 22:40:41 +0000] [5850] [CRITICAL] WORKER TIMEOUT (pid:6197)
+[2016-02-29 22:39:54 +0000] [6197] [INFO] Worker exiting (pid: 6197)
+[2016-02-29 22:40:02 +0000] [6260] [INFO] Booting worker with pid: 6260
+[2016-03-02 11:48:12 +0000] [3846] [INFO] Starting gunicorn 19.4.5
+[2016-03-02 11:48:12 +0000] [3846] [INFO] Listening at: http://0.0.0.0:8000 (3846)
+[2016-03-02 11:48:12 +0000] [3846] [INFO] Using worker: sync
+[2016-03-02 11:48:12 +0000] [3851] [INFO] Booting worker with pid: 3851
+[2016-03-02 11:48:12 +0000] [3852] [INFO] Booting worker with pid: 3852
+[2016-03-02 11:48:12 +0000] [3853] [INFO] Booting worker with pid: 3853
+[2016-03-02 11:48:12 +0000] [3854] [INFO] Booting worker with pid: 3854
+[2016-03-02 11:50:34 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:3852)
+[2016-03-02 11:50:34 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:3853)
+[2016-03-02 11:50:34 +0000] [3852] [INFO] Worker exiting (pid: 3852)
+[2016-03-02 11:50:34 +0000] [3853] [INFO] Worker exiting (pid: 3853)
+[2016-03-02 11:50:34 +0000] [4034] [INFO] Booting worker with pid: 4034
+[2016-03-02 11:50:34 +0000] [4035] [INFO] Booting worker with pid: 4035
+[2016-03-02 11:54:02 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4035)
+[2016-03-02 11:54:02 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:3854)
+[2016-03-02 11:54:02 +0000] [4035] [INFO] Worker exiting (pid: 4035)
+[2016-03-02 11:54:02 +0000] [3854] [INFO] Worker exiting (pid: 3854)
+[2016-03-02 11:54:03 +0000] [4218] [INFO] Booting worker with pid: 4218
+[2016-03-02 11:54:03 +0000] [4217] [INFO] Booting worker with pid: 4217
+[2016-03-02 11:55:36 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4217)
+[2016-03-02 11:55:36 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4218)
+[2016-03-02 11:55:36 +0000] [4217] [INFO] Worker exiting (pid: 4217)
+[2016-03-02 11:55:36 +0000] [4218] [INFO] Worker exiting (pid: 4218)
+[2016-03-02 11:54:52 +0000] [4295] [INFO] Booting worker with pid: 4295
+[2016-03-02 11:54:53 +0000] [4298] [INFO] Booting worker with pid: 4298
+[2016-03-02 11:56:36 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4034)
+[2016-03-02 11:56:36 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4295)
+[2016-03-02 11:56:36 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4298)
+[2016-03-02 11:56:36 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:3851)
+[2016-03-02 11:56:36 +0000] [4034] [INFO] Worker exiting (pid: 4034)
+[2016-03-02 11:56:36 +0000] [4298] [INFO] Worker exiting (pid: 4298)
+[2016-03-02 11:56:36 +0000] [4295] [INFO] Worker exiting (pid: 4295)
+[2016-03-02 11:56:36 +0000] [3851] [INFO] Worker exiting (pid: 3851)
+[2016-03-02 11:55:49 +0000] [4336] [INFO] Booting worker with pid: 4336
+[2016-03-02 11:55:49 +0000] [4338] [INFO] Booting worker with pid: 4338
+[2016-03-02 11:55:49 +0000] [4339] [INFO] Booting worker with pid: 4339
+[2016-03-02 11:55:49 +0000] [4342] [INFO] Booting worker with pid: 4342
+[2016-03-02 12:01:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4336)
+[2016-03-02 12:01:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4338)
+[2016-03-02 12:01:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4339)
+[2016-03-02 12:01:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4342)
+[2016-03-02 12:01:37 +0000] [4338] [INFO] Worker exiting (pid: 4338)
+[2016-03-02 12:01:37 +0000] [4336] [INFO] Worker exiting (pid: 4336)
+[2016-03-02 12:01:37 +0000] [4339] [INFO] Worker exiting (pid: 4339)
+[2016-03-02 12:01:37 +0000] [4342] [INFO] Worker exiting (pid: 4342)
+[2016-03-02 12:01:37 +0000] [4687] [INFO] Booting worker with pid: 4687
+[2016-03-02 12:01:37 +0000] [4688] [INFO] Booting worker with pid: 4688
+[2016-03-02 12:01:37 +0000] [4689] [INFO] Booting worker with pid: 4689
+[2016-03-02 12:01:37 +0000] [4690] [INFO] Booting worker with pid: 4690
+[2016-03-02 12:11:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4688)
+[2016-03-02 12:11:37 +0000] [4688] [INFO] Worker exiting (pid: 4688)
+[2016-03-02 12:11:37 +0000] [5043] [INFO] Booting worker with pid: 5043
+[2016-03-02 12:13:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4687)
+[2016-03-02 12:13:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4689)
+[2016-03-02 12:13:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:4690)
+[2016-03-02 12:13:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5043)
+[2016-03-02 12:13:37 +0000] [4687] [INFO] Worker exiting (pid: 4687)
+[2016-03-02 12:13:37 +0000] [4689] [INFO] Worker exiting (pid: 4689)
+[2016-03-02 12:13:37 +0000] [4690] [INFO] Worker exiting (pid: 4690)
+[2016-03-02 12:13:37 +0000] [5043] [INFO] Worker exiting (pid: 5043)
+[2016-03-02 12:13:38 +0000] [5143] [INFO] Booting worker with pid: 5143
+[2016-03-02 12:13:38 +0000] [5144] [INFO] Booting worker with pid: 5144
+[2016-03-02 12:13:38 +0000] [5145] [INFO] Booting worker with pid: 5145
+[2016-03-02 12:13:38 +0000] [5146] [INFO] Booting worker with pid: 5146
+[2016-03-02 12:15:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5143)
+[2016-03-02 12:15:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5144)
+[2016-03-02 12:15:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5145)
+[2016-03-02 12:15:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5146)
+[2016-03-02 12:15:37 +0000] [5143] [INFO] Worker exiting (pid: 5143)
+[2016-03-02 12:15:37 +0000] [5144] [INFO] Worker exiting (pid: 5144)
+[2016-03-02 12:15:37 +0000] [5145] [INFO] Worker exiting (pid: 5145)
+[2016-03-02 12:15:37 +0000] [5146] [INFO] Worker exiting (pid: 5146)
+[2016-03-02 12:14:49 +0000] [5265] [INFO] Booting worker with pid: 5265
+[2016-03-02 12:14:49 +0000] [5264] [INFO] Booting worker with pid: 5264
+[2016-03-02 12:14:49 +0000] [5267] [INFO] Booting worker with pid: 5267
+[2016-03-02 12:14:49 +0000] [5266] [INFO] Booting worker with pid: 5266
+[2016-03-02 12:15:04 +0000] [5265] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 12, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2398, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2413, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 717, in execute
+    return meth(self, multiparams, params)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 317, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 814, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 927, in _execute_context
+    context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1076, in _handle_dbapi_exception
+    exc_info
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 185, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 920, in _execute_context
+    context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 425, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (OperationalError) database is locked u'SELECT players.id AS players_id, players.name AS players_name, players.last_player_heartbeat AS players_last_player_heartbeat, players.last_player_issue AS players_last_player_issue, players.last_player_state AS players_last_player_state, players.last_screen_issue AS players_last_screen_issue, players.screen_type AS players_screen_type, players.power_status AS players_power_status, players.resolution AS players_resolution, players.brightness AS players_brightness, players.contrast AS players_contrast, players.powered_on_hours AS players_powered_on_hours, players.backlight_on_hours AS players_backlight_on_hours, players.cm_id AS players_cm_id \nFROM players' ()
+[2016-03-02 12:24:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5264)
+[2016-03-02 12:24:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5265)
+[2016-03-02 12:24:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5266)
+[2016-03-02 12:24:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5267)
+[2016-03-02 12:24:37 +0000] [5264] [INFO] Worker exiting (pid: 5264)
+[2016-03-02 12:24:37 +0000] [5266] [INFO] Worker exiting (pid: 5266)
+[2016-03-02 12:24:37 +0000] [5265] [INFO] Worker exiting (pid: 5265)
+[2016-03-02 12:24:37 +0000] [5267] [INFO] Worker exiting (pid: 5267)
+[2016-03-02 12:23:49 +0000] [5735] [INFO] Booting worker with pid: 5735
+[2016-03-02 12:23:49 +0000] [5737] [INFO] Booting worker with pid: 5737
+[2016-03-02 12:23:49 +0000] [5736] [INFO] Booting worker with pid: 5736
+[2016-03-02 12:23:49 +0000] [5738] [INFO] Booting worker with pid: 5738
+[2016-03-02 12:24:28 +0000] [5738] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rookiebulls/scala/app/players/routes.py", line 12, in index
+    players = Player.query.all()
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2286, in all
+    return list(self)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2398, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2413, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 717, in execute
+    return meth(self, multiparams, params)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 317, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 814, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 927, in _execute_context
+    context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1076, in _handle_dbapi_exception
+    exc_info
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 185, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 920, in _execute_context
+    context)
+  File "/home/rookiebulls/scala/venv/local/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 425, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (OperationalError) database is locked u'SELECT players.id AS players_id, players.name AS players_name, players.last_player_heartbeat AS players_last_player_heartbeat, players.last_player_issue AS players_last_player_issue, players.last_player_state AS players_last_player_state, players.last_screen_issue AS players_last_screen_issue, players.screen_type AS players_screen_type, players.power_status AS players_power_status, players.resolution AS players_resolution, players.brightness AS players_brightness, players.contrast AS players_contrast, players.powered_on_hours AS players_powered_on_hours, players.backlight_on_hours AS players_backlight_on_hours, players.cm_id AS players_cm_id \nFROM players' ()
+[2016-03-02 12:27:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5735)
+[2016-03-02 12:27:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5736)
+[2016-03-02 12:27:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5737)
+[2016-03-02 12:27:37 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:5738)
+[2016-03-02 12:27:37 +0000] [5738] [INFO] Worker exiting (pid: 5738)
+[2016-03-02 12:27:37 +0000] [5737] [INFO] Worker exiting (pid: 5737)
+[2016-03-02 12:27:37 +0000] [5735] [INFO] Worker exiting (pid: 5735)
+[2016-03-02 12:26:49 +0000] [5736] [INFO] Worker exiting (pid: 5736)
+[2016-03-02 12:26:49 +0000] [6004] [INFO] Booting worker with pid: 6004
+[2016-03-02 12:26:49 +0000] [6005] [INFO] Booting worker with pid: 6005
+[2016-03-02 12:26:49 +0000] [6008] [INFO] Booting worker with pid: 6008
+[2016-03-02 12:26:49 +0000] [6009] [INFO] Booting worker with pid: 6009
+[2016-03-02 12:45:39 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6004)
+[2016-03-02 12:45:39 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6005)
+[2016-03-02 12:45:39 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6008)
+[2016-03-02 12:45:39 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6009)
+[2016-03-02 12:44:54 +0000] [6008] [INFO] Worker exiting (pid: 6008)
+[2016-03-02 12:44:59 +0000] [6005] [INFO] Worker exiting (pid: 6005)
+[2016-03-02 12:45:39 +0000] [6004] [INFO] Worker exiting (pid: 6004)
+[2016-03-02 12:45:05 +0000] [6009] [INFO] Worker exiting (pid: 6009)
+[2016-03-02 12:45:47 +0000] [6135] [INFO] Booting worker with pid: 6135
+[2016-03-02 12:45:49 +0000] [6134] [INFO] Booting worker with pid: 6134
+[2016-03-02 12:46:09 +0000] [6137] [INFO] Booting worker with pid: 6137
+[2016-03-02 12:46:14 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6134)
+[2016-03-02 12:46:14 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6135)
+[2016-03-02 12:46:23 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6137)
+[2016-03-02 12:46:24 +0000] [6139] [INFO] Booting worker with pid: 6139
+[2016-03-02 12:46:27 +0000] [6140] [INFO] Booting worker with pid: 6140
+[2016-03-02 12:46:19 +0000] [6138] [INFO] Booting worker with pid: 6138
+[2016-03-02 12:46:30 +0000] [6141] [INFO] Booting worker with pid: 6141
+[2016-03-02 12:46:46 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6138)
+[2016-03-02 12:46:46 +0000] [6138] [INFO] Worker exiting (pid: 6138)
+[2016-03-02 12:47:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6139)
+[2016-03-02 12:46:51 +0000] [6142] [INFO] Booting worker with pid: 6142
+[2016-03-02 12:46:56 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6140)
+[2016-03-02 12:47:00 +0000] [6149] [INFO] Booting worker with pid: 6149
+[2016-03-02 12:47:07 +0000] [6151] [INFO] Booting worker with pid: 6151
+[2016-03-02 12:47:06 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6141)
+[2016-03-02 12:47:18 +0000] [6161] [INFO] Booting worker with pid: 6161
+[2016-03-02 12:47:20 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6142)
+[2016-03-02 12:47:31 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6149)
+[2016-03-02 12:47:31 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6151)
+[2016-03-02 12:47:31 +0000] [6151] [INFO] Worker exiting (pid: 6151)
+[2016-03-02 12:47:31 +0000] [6163] [INFO] Booting worker with pid: 6163
+[2016-03-02 12:47:31 +0000] [6164] [INFO] Booting worker with pid: 6164
+[2016-03-02 12:47:31 +0000] [6162] [INFO] Booting worker with pid: 6162
+[2016-03-02 12:51:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6161)
+[2016-03-02 12:51:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6162)
+[2016-03-02 12:51:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6163)
+[2016-03-02 12:51:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6164)
+[2016-03-02 12:51:42 +0000] [6161] [INFO] Worker exiting (pid: 6161)
+[2016-03-02 12:51:42 +0000] [6164] [INFO] Worker exiting (pid: 6164)
+[2016-03-02 12:51:42 +0000] [6163] [INFO] Worker exiting (pid: 6163)
+[2016-03-02 12:51:42 +0000] [6162] [INFO] Worker exiting (pid: 6162)
+[2016-03-02 12:50:54 +0000] [6206] [INFO] Booting worker with pid: 6206
+[2016-03-02 12:50:54 +0000] [6207] [INFO] Booting worker with pid: 6207
+[2016-03-02 12:50:54 +0000] [6208] [INFO] Booting worker with pid: 6208
+[2016-03-02 12:50:54 +0000] [6209] [INFO] Booting worker with pid: 6209
+[2016-03-02 12:59:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6208)
+[2016-03-02 12:59:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6209)
+[2016-03-02 12:59:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6206)
+[2016-03-02 12:59:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6207)
+[2016-03-02 12:59:42 +0000] [6208] [INFO] Worker exiting (pid: 6208)
+[2016-03-02 12:59:42 +0000] [6209] [INFO] Worker exiting (pid: 6209)
+[2016-03-02 12:59:42 +0000] [6207] [INFO] Worker exiting (pid: 6207)
+[2016-03-02 12:59:42 +0000] [6206] [INFO] Worker exiting (pid: 6206)
+[2016-03-02 12:58:54 +0000] [6228] [INFO] Booting worker with pid: 6228
+[2016-03-02 12:58:54 +0000] [6229] [INFO] Booting worker with pid: 6229
+[2016-03-02 12:58:54 +0000] [6230] [INFO] Booting worker with pid: 6230
+[2016-03-02 12:58:54 +0000] [6235] [INFO] Booting worker with pid: 6235
+[2016-03-02 13:01:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6228)
+[2016-03-02 13:01:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6229)
+[2016-03-02 13:01:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6230)
+[2016-03-02 13:01:42 +0000] [3846] [CRITICAL] WORKER TIMEOUT (pid:6235)
+[2016-03-02 13:01:42 +0000] [6228] [INFO] Worker exiting (pid: 6228)
+[2016-03-02 13:01:42 +0000] [6235] [INFO] Worker exiting (pid: 6235)
+[2016-03-02 13:01:42 +0000] [6229] [INFO] Worker exiting (pid: 6229)
+[2016-03-02 13:01:42 +0000] [6230] [INFO] Worker exiting (pid: 6230)
+[2016-03-02 13:01:42 +0000] [6253] [INFO] Booting worker with pid: 6253
+[2016-03-02 13:01:42 +0000] [6254] [INFO] Booting worker with pid: 6254
+[2016-03-02 13:01:42 +0000] [6255] [INFO] Booting worker with pid: 6255
+[2016-03-02 13:01:42 +0000] [6256] [INFO] Booting worker with pid: 6256
+[2016-03-02 13:02:21 +0000] [3846] [INFO] Handling signal: term
+[2016-03-02 13:02:21 +0000] [6254] [INFO] Worker exiting (pid: 6254)
+[2016-03-02 13:02:21 +0000] [6253] [INFO] Worker exiting (pid: 6253)
+[2016-03-02 13:02:21 +0000] [6255] [INFO] Worker exiting (pid: 6255)
+[2016-03-02 13:02:21 +0000] [6256] [INFO] Worker exiting (pid: 6256)
+[2016-03-02 13:02:22 +0000] [3846] [INFO] Shutting down: Master

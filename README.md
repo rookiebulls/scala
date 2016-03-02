@@ -62,3 +62,10 @@ For Windows users working on the standard command prompt:
      * Restarting with reloader
 
 Now open your web browser and type [http://localhost:5000](http://localhost:5000) in the address bar to see the application running. If you feel adventurous click on the "Presenter Login" link on the far right of the navigation bar and ensure the account credentials you picked above work.
+
+supervisord -c supervisor.conf
+
+supervisorctl -c supervisor.conf start scala
+
+celery -A tasks worker --loglevel=info
+

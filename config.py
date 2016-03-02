@@ -4,6 +4,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY')
+    PLAYER_PER_PAGE = 1
 
 
 class DevelopmentConfig(Config):

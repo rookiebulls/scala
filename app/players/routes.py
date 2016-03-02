@@ -1,16 +1,25 @@
-from flask import render_template, flash, redirect, url_for, abort
+from flask import render_template, flash, redirect, url_for, abort, request, current_app
 from flask.ext.login import login_required, current_user
 from .. import db
 from ..models import User, Player, ContentManager
 from . import players
 from .forms import ProfileForm, EditForm, ContentmanagerForm, CMEditForm
+import requests
 
 
 @players.route('/')
 def index():
-    players = Player.query.all()
-    cms = ContentManager.query.all()
-    return render_template('players/index.html', players=players, cms=cms)
+    try:
+        page = request.args.get('page', 1, type=int)
+        pagination = Player.query.order_by(Player.last_player_heartbeat.desc()).paginate(
+            page, per_page=current_app.config['PLAYER_PER_PAGE'],
+            error_out=False)
+        players = pagination.items
+        cms = ContentManager.query.all()
+        return render_template('players/index.html', players=players, cms=cms, pagination=pagination)
+    except Exception, e:
+        return str(e)
+
 
 
 @players.route('/user/<username>')
@@ -23,10 +32,17 @@ def user(username):
 
 @players.route('/players/contentmanager/<int:id>')
 def sorted_players(id):
-    cms = ContentManager.query.all()
-    cm = ContentManager.query.get_or_404(id)
-    players = cm.players
-    return render_template('players/index.html', players=players, cms=cms)
+    try:
+        cms = ContentManager.query.all()
+        cm = ContentManager.query.get_or_404(id)
+        page = request.args.get('page', 1, type=int)
+        pagination = cm.players.order_by(Player.last_player_heartbeat.desc()).paginate(
+            page, per_page=current_app.config['PLAYER_PER_PAGE'],
+            error_out=False)
+        players = pagination.items
+        return render_template('players/sorted_players.html', players=players, cms=cms, pagination=pagination, id=id)
+    except Exception, e:
+        return str(e)
 
 
 @players.route('/screen/<int:id>')
@@ -48,7 +64,7 @@ def new_user():
         db.session.add(user)
         db.session.commit()
         flash('Successfully add a new user.')
-        return redirect(url_for('players.index'))
+        return redirect(url_for('players.user', username=current_user.username))
     return render_template('players/add_user.html', form=form)
 
 
@@ -95,11 +111,23 @@ def new_cm():
         ip_address = form.ip_address.data
         username = form.username.data
         password = form.password.data
-        cm = ContentManager(ip_address=ip_address, username=username, password=password)
-        db.session.add(cm)
-        db.session.commit()
-        return redirect(url_for('players/contentmanager.html'))
+        CM_LOGIN = {"username": username, "password": password}
+        try:
+            r = requests.post("%s/api/rest/auth/login" % ip_address, json=CM_LOGIN)
+            authinfo = r.json()
+            if authinfo.get('token') is not None:
+                cm = ContentManager(ip_address=ip_address, username=username, password=password)
+                db.session.add(cm)
+                db.session.commit()
+                flash('Successfully add a new content manager.')
+                return redirect(url_for('players.contentmanager'))
+            else:
+                flash('Invalid username or password.')
+        except Exception, e:
+            flash(e)
+
     return render_template('players/add_cm.html', form=form)
+
     
 
 @players.route('/contentmanager/edit/<int:id>', methods=['GET', 'POST'])

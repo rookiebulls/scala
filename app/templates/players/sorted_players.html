@@ -15,7 +15,7 @@
     </div>
 {% include "players/_players.html" %}
 <div class="pagination">
-  {{macros.pagination_widget(pagination, '.index')}}
+  {{macros.pagination_widget(pagination, '.sorted_players', id=id)}}
 </div>
 {% endblock %}
 
